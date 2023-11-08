@@ -14,12 +14,13 @@ import { useState } from "react";
 
 const ToggleMessage = () => {
   const [isVisible, setVisible] = useState(false);
+  const handleClick = () => {
+    setVisible(!isVisible);
+  };
   return (
     <div>
-      <button onClick={() => setVisible(!isVisible)}>
-        {isVisible ? "Hide Message" : "Show Message"}
-      </button>
-      {isVisible && <p>Hi! How are You!!!</p>}
+      <button onClick={handleClick}>Show Message</button>
+      {isVisible === true ? <p>Hi Everyone</p> : null}
     </div>
   );
 };

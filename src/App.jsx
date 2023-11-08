@@ -4,7 +4,9 @@
 // import Navbar from "./day3/coffeeShop/Navbar";
 // import categories from "./day3/coffeeShop/products";
 
+import Counter from "./day3/Counter";
 import DynamicRendering from "./day3/DynamicRendering";
+import ToggleMessage from "./day3/ToggleMessage";
 
 function App() {
   // const [activeCategory, setActiveCategory] = useState(categories[0]);
@@ -27,7 +29,9 @@ function App() {
       {/* <Button label="Yellow Button" color="yellow" />
       <Button label="Black Button" color="gray" />
       <Button label="Red Button" color="red" /> */}
-      <DynamicRendering />
+      <h1>Hello</h1>
+      <ToggleMessage />
+      <Counter />
     </div>
   );
 }
