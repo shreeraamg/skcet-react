@@ -1,5 +1,28 @@
+import { useState } from "react";
+import Cart from "./day3/coffeeShop/Cart";
+import Menu from "./day3/coffeeShop/Menu";
+import Navbar from "./day3/coffeeShop/Navbar";
+import categories from "./day3/coffeeShop/products";
+
 function App() {
-  return <div>App</div>;
+  const [activeCategory, setActiveCategory] = useState(categories[0]);
+  const [products, setProducts] = useState([]);
+
+  const handleClick = (index) => {
+    setActiveCategory(categories[index]);
+  };
+
+  const handleAddToCart = (item) => {
+    setProducts([...products, item]);
+  };
+
+  return (
+    <div>
+      <Navbar category={categories} handleClick={handleClick} />
+      <Menu activeCategory={activeCategory} handleAddToCart={handleAddToCart} />
+      <Cart products={products} />
+    </div>
+  );
 }
 
 export default App;
