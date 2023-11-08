@@ -6,6 +6,9 @@
 
 import Counter from "./day3/Counter";
 import DynamicRendering from "./day3/DynamicRendering";
+import FormComponent from "./day3/FormComponent";
+import GokuTransformation from "./day3/GokuTransformation";
+import Message from "./day3/Message";
 import ToggleMessage from "./day3/ToggleMessage";
 
 function App() {
@@ -21,7 +24,7 @@ function App() {
   // };
 
   return (
-    <div className="flex space-x-4 my-4">
+    <div className="space-y-4 my-4">
       {/* <Navbar category={categories} handleClick={handleClick} />
       <Menu activeCategory={activeCategory} handleAddToCart={handleAddToCart} />
       <Cart products={products} /> */}
@@ -29,9 +32,7 @@ function App() {
       {/* <Button label="Yellow Button" color="yellow" />
       <Button label="Black Button" color="gray" />
       <Button label="Red Button" color="red" /> */}
-      <h1>Hello</h1>
-      <ToggleMessage />
-      <Counter />
+      <FormComponent />
     </div>
   );
 }
