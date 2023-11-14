@@ -1,27 +1,16 @@
-import { useState } from "react";
-import Cart from "./day3/coffeeShop/Cart";
-import Menu from "./day3/coffeeShop/Menu";
-import Navbar from "./day3/coffeeShop/Navbar";
-import categories from "./day3/coffeeShop/products";
+import { Container } from "@mui/material";
+import MaterialGrid from "./day4/styling/MaterialGrid";
+import ClassComp from "./day3/ClassComp";
+import Counter from "./day4/Counter/Counter";
 
 function App() {
-  const [activeCategory, setActiveCategory] = useState(categories[0]);
-  const [products, setProducts] = useState([]);
-
-  const handleClick = (index) => {
-    setActiveCategory(categories[index]);
-  };
-
-  const handleAddToCart = (item) => {
-    setProducts([...products, item]);
-  };
-
   return (
-    <div className="space-y-4 my-4">
-      <Navbar category={categories} handleClick={handleClick} />
-      <Menu activeCategory={activeCategory} handleAddToCart={handleAddToCart} />
-      <Cart products={products} />
-    </div>
+    <Container>
+      <Counter />
+      {/* <MaterialGrid /> */}
+      {/* <Sample /> */}
+      {/* <ClassComp /> */}
+    </Container>
   );
 }
 
