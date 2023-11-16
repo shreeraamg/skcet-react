@@ -1,16 +1,15 @@
 import { Container } from "@mui/material";
-import MaterialGrid from "./day4/styling/MaterialGrid";
-import ClassComp from "./day3/ClassComp";
-import Counter from "./day4/Counter/Counter";
+import Effects from "./day5/Effects";
+import ErrorBoundary from "./day5/ErrorBoundary";
+import ErrorComponent from "./day5/ErrorComponent";
+import Counter from "./day3/Counter";
+import Errors from "./day5/Errors";
 
 function App() {
   return (
-    <Container>
-      <Counter />
-      {/* <MaterialGrid /> */}
-      {/* <Sample /> */}
-      {/* <ClassComp /> */}
-    </Container>
+    <>
+      <ErrorComponent />
+    </>
   );
 }
 
