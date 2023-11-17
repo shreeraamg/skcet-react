@@ -1,16 +1,23 @@
-import { Container } from "@mui/material";
-import Effects from "./day5/Effects";
-import ErrorBoundary from "./day5/ErrorBoundary";
-import ErrorComponent from "./day5/ErrorComponent";
-import Counter from "./day3/Counter";
-import Errors from "./day5/Errors";
+import React, { useState } from "react";
+import TaskNavbar from "./day6/taskList/TaskNavbar";
+import HomePage from "./day6/taskList/HomePage";
+import { TaskContent } from "./day6/taskList/TaskContext";
 
-function App() {
+const App = () => {
+  const [myTasks, setMyTasks] = useState([]);
+
+  const updateState = ({ arr }) => {
+    setMyTasks([...myTasks, Date.now()]);
+  };
+
   return (
-    <>
-      <ErrorComponent />
-    </>
+    <div>
+      <TaskContent.Provider value={{ myTasks, updateState }}>
+        <TaskNavbar />
+        <HomePage />
+      </TaskContent.Provider>
+    </div>
   );
-}
+};
 
 export default App;
