@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import TaskNavbar from "./day6/taskList/TaskNavbar";
-import HomePage from "./day6/taskList/HomePage";
-import { TaskContent } from "./day6/taskList/TaskContext";
+import React from "react";
+import CounterComponent from "./day7/hoc/CounterComponent";
+import HoverCounter from "./day7/hoc/HoverCounter";
 
+// Task Context Main Code
+/*
 const App = () => {
   const [myTasks, setMyTasks] = useState([]);
 
@@ -18,6 +19,11 @@ const App = () => {
       </TaskContent.Provider>
     </div>
   );
+};
+*/
+
+const App = () => {
+  return <></>;
 };
 
 export default App;
