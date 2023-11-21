@@ -19,9 +19,11 @@ const App = () => {
 */
 
 import Users from "./day8/Users";
+import CricketScore from "./day9/CricketScore";
+import MyForm from "./day9/MyForm";
 
 const App = () => {
-  return <Users />;
+  return <MyForm />;
 };
 
 export default App;
