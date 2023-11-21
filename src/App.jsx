@@ -1,7 +1,3 @@
-import React from "react";
-import CounterComponent from "./day7/hoc/CounterComponent";
-import HoverCounter from "./day7/hoc/HoverCounter";
-
 // Task Context Main Code
 /*
 const App = () => {
@@ -22,8 +18,10 @@ const App = () => {
 };
 */
 
+import Users from "./day8/Users";
+
 const App = () => {
-  return <></>;
+  return <Users />;
 };
 
 export default App;
