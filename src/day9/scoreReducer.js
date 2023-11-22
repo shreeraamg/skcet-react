@@ -1,5 +1,11 @@
+/*
+ action = {
+  type: "TYPE_OF_ACTION"
+ }
+ */
+
 function scoreReducer(currentState, action) {
-  if (action === "ONE") {
+  if (action.type === "ONE") {
     return currentState + 1;
   }
   if (action === "TWO") {

@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { ThemeContext } from "./themeContext";
 
 const SixHome = () => {
-  const { theme, changeTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <Box

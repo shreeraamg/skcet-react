@@ -23,7 +23,7 @@ const CricketScore = () => {
         Score: {score}
       </Typography>
       <ButtonGroup variant="contained">
-        <Button onClick={() => dispatch("ONE")}>One</Button>
+        <Button onClick={() => dispatch({ type: "ONE" })}>One</Button>
         <Button onClick={() => dispatch("TWO")}>Two</Button>
         <Button onClick={() => dispatch("THREE")}>Three</Button>
         <Button onClick={() => dispatch("FOUR")}>Four</Button>
