@@ -18,16 +18,11 @@ const App = () => {
 };
 */
 
-import { RouterProvider } from "react-router-dom";
-import router from "./day11/Routing";
-import AuthContext from "./day10/auth/AuthContext";
+import HOCMain from "./day12/HOCMain";
+import MemoHook from "./day12/MemoHook";
 
 const App = () => {
-  return (
-    <AuthContext.Provider value={{}}>
-      <RouterProvider router={router} />
-    </AuthContext.Provider>
-  );
+  return <MemoHook />;
 };
 
 export default App;
