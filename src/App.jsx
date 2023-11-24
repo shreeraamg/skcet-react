@@ -18,22 +18,14 @@ const App = () => {
 };
 */
 
-import { useReducer } from "react";
-import AuthHomePage from "./day10/auth/AuthHomePage";
-import AuthNavbar from "./day10/auth/AuthNavbar";
-import { AuthContext } from "./day10/auth/AuthContext";
-import authReducer from "./day10/auth/authReducer";
-import ANavbar from "./day10/auth/ANavbar";
+import { RouterProvider } from "react-router-dom";
+import router from "./day11/Routing";
+import AuthContext from "./day10/auth/AuthContext";
 
 const App = () => {
-  // const [user, setUser] = useState(null);
-  const [user, dispatch] = useReducer(authReducer, null);
-
   return (
-    // <ANavbar />
-    <AuthContext.Provider value={{ user, dispatch }}>
-      <AuthNavbar />
-      <AuthHomePage />
+    <AuthContext.Provider value={{}}>
+      <RouterProvider router={router} />
     </AuthContext.Provider>
   );
 };
